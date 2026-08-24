@@ -56,3 +56,28 @@ Displays result:
 Total electricity bill based on slab calculation.
 
 Invalid input if units are negative.
+# Grade_Evaluator.cpp
+Purpose:  
+Assigns a grade to a student based on their marks.
+
+Process:
+
+User enters their marks.
+
+Program checks the input value.
+
+Applies conditions:
+
+Marks ≥ 90 → Grade A
+
+Marks ≥ 75 and < 90 → Grade B
+
+Marks ≥ 50 and < 75 → Grade C
+
+Marks ≥ 33 and < 50 → Grade D (Pass)
+
+Marks < 33 → Grade F (Fail)
+
+Displays result:
+
+Grade A, B, C, D (Pass), or F (Fail) depending on marks.
