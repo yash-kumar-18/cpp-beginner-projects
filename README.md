@@ -28,3 +28,31 @@ Applies conditions:
 2. Individual cutoff → both theory and practical ≥ 15.
 
 3. Displays result: Pass, Fail due to cutoff, Fail overall, or Invalid input.
+
+4.#Electricity_Bill_Calculator.cpp
+
+Purpose:
+
+Calculates the electricity bill based on the number of units consumed, applying slab-wise rates.
+
+Process:
+
+User enters the number of units consumed.
+
+Program checks validity of input (units must be ≥ 0).
+
+Applies conditions:
+
+Up to 100 units → ₹5 per unit.
+
+101–200 units → First 100 units at ₹5, remaining at ₹7 per unit.
+
+201–300 units → First 100 units at ₹5, next 100 at ₹7, remaining at ₹9 per unit.
+
+Above 300 units → First 100 units at ₹5, next 100 at ₹7, next 100 at ₹9, remaining at ₹11 per unit.
+
+Displays result:
+
+Total electricity bill based on slab calculation.
+
+Invalid input if units are negative.
