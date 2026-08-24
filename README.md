@@ -8,11 +8,11 @@ Purpose: Divides a total bill amount among a given number of persons.
 
 Process:
 
-1.User enters the total bill amount.
+1. User enters the total bill amount.
 
-2.User enters the number of persons.
+2. User enters the number of persons.
 
-3.0Program calculates and displays the bill per person.
+3. Program calculates and displays the bill per person.
 
 # Cutoff_Checker.cpp
 
@@ -54,7 +54,7 @@ Applies conditions:
 
 3. 201–300 units → First 100 units at ₹5, next 100 at ₹7, remaining at ₹9 per unit.
 
- 4.Above 300 units → First 100 units at ₹5, next 100 at ₹7, next 100 at ₹9, remaining at ₹11 per unit.
+4. Above 300 units → First 100 units at ₹5, next 100 at ₹7, next 100 at ₹9, remaining at ₹11 per unit.
 
 Displays result:
 
