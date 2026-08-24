@@ -10,7 +10,7 @@ Process:
 2.User enters the number of persons.
 
 3.0Program calculates and displays the bill per person.
-# Grade_Evaluator.cpp
+# Cutoff_Checker.cpp
 Purpose: Determines whether a student passes or fails based on theory and practical marks.
 
 Process:
