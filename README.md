@@ -10,3 +10,21 @@ Process:
 2.User enters the number of persons.
 
 3.0Program calculates and displays the bill per person.
+# Grade_Evaluator.cpp
+Purpose: Determines whether a student passes or fails based on theory and practical marks.
+
+Process:
+
+User enters theory marks (0–50).
+
+User enters practical marks (0–50).
+
+Program checks validity of input.
+
+Applies conditions:
+
+1. Overall cutoff → total marks ≥ 40.
+
+2. Individual cutoff → both theory and practical ≥ 15.
+
+3. Displays result: Pass, Fail due to cutoff, Fail overall, or Invalid input.
