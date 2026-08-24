@@ -81,3 +81,22 @@ Marks < 33 → Grade F (Fail)
 Displays result:
 
 Grade A, B, C, D (Pass), or F (Fail) depending on marks.
+# Voting_Eligibility.cpp
+Purpose:  
+Determines whether a person is eligible to vote based on their age.
+
+Process:
+
+User enters their age.
+
+Program checks the input value.
+
+Applies condition:
+
+Age ≥ 18 → Eligible to vote.
+
+Age < 18 → Not eligible to vote.
+
+Displays result:
+
+"You Are Eligible To Vote" or "You Are Not Eligible To Vote".
