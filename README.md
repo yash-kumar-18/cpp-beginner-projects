@@ -43,13 +43,13 @@ Program checks validity of input (units must be ≥ 0).
 
 Applies conditions:
 
-Up to 100 units → ₹5 per unit.
+1. Up to 100 units → ₹5 per unit.
 
-101–200 units → First 100 units at ₹5, remaining at ₹7 per unit.
+2. 101–200 units → First 100 units at ₹5, remaining at ₹7 per unit.
 
-201–300 units → First 100 units at ₹5, next 100 at ₹7, remaining at ₹9 per unit.
+3. 201–300 units → First 100 units at ₹5, next 100 at ₹7, remaining at ₹9 per unit.
 
-Above 300 units → First 100 units at ₹5, next 100 at ₹7, next 100 at ₹9, remaining at ₹11 per unit.
+ 4.Above 300 units → First 100 units at ₹5, next 100 at ₹7, next 100 at ₹9, remaining at ₹11 per unit.
 
 Displays result:
 
@@ -68,15 +68,15 @@ Program checks the input value.
 
 Applies conditions:
 
-Marks ≥ 90 → Grade A
+1. Marks ≥ 90 → Grade A
 
-Marks ≥ 75 and < 90 → Grade B
+2. Marks ≥ 75 and < 90 → Grade B
 
-Marks ≥ 50 and < 75 → Grade C
+3. Marks ≥ 50 and < 75 → Grade C
 
-Marks ≥ 33 and < 50 → Grade D (Pass)
+4. Marks ≥ 33 and < 50 → Grade D (Pass)
 
-Marks < 33 → Grade F (Fail)
+5. Marks < 33 → Grade F (Fail)
 
 Displays result:
 
@@ -93,10 +93,33 @@ Program checks the input value.
 
 Applies condition:
 
-Age ≥ 18 → Eligible to vote.
+1. Age ≥ 18 → Eligible to vote.
 
-Age < 18 → Not eligible to vote.
+2. Age < 18 → Not eligible to vote.
 
 Displays result:
 
 "You Are Eligible To Vote" or "You Are Not Eligible To Vote".
+
+# Water_State_Checker.cpp
+Purpose:  
+Determines the physical state of water (solid, liquid, or gaseous) based on its temperature in Celsius.
+
+Process:
+
+User enters the temperature of water in Celsius.
+
+Program checks the input value.
+
+Applies conditions:
+
+1. Temperature < 0°C → Water is in solid state (ice).
+
+2. Temperature ≥ 100°C → Water is in gaseous state (steam).
+
+3. Temperature between 0°C and 100°C → Water is in liquid state.
+
+Displays result:
+
+"Your Water Is In Solid State", "Your Water Is In Liquid State", or "Your Water Is In Gaseous State".
+
