@@ -29,7 +29,7 @@ Applies conditions:
 
 3. Displays result: Pass, Fail due to cutoff, Fail overall, or Invalid input.
 
-4.#Electricity_Bill_Calculator.cpp
+#Electricity_Bill_Calculator.cpp
 
 Purpose:
 
