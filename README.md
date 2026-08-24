@@ -1,6 +1,9 @@
 # cpp-beginner-projects
+
 A collection of beginner-friendly programming projects and coding exercises built while learning foundational logic. I will be working constantly and will upload some basic projects in this repository and will update them if needed.
+
 # Bill_Splitter.cpp
+
 Purpose: Divides a total bill amount among a given number of persons.
 
 Process:
@@ -10,16 +13,18 @@ Process:
 2.User enters the number of persons.
 
 3.0Program calculates and displays the bill per person.
+
 # Cutoff_Checker.cpp
+
 Purpose: Determines whether a student passes or fails based on theory and practical marks.
 
 Process:
 
-User enters theory marks (0–50).
+1. User enters theory marks (0–50).
 
-User enters practical marks (0–50).
+2. User enters practical marks (0–50).
 
-Program checks validity of input.
+3. Program checks validity of input.
 
 Applies conditions:
 
@@ -37,9 +42,9 @@ Calculates the electricity bill based on the number of units consumed, applying 
 
 Process:
 
-User enters the number of units consumed.
+1. User enters the number of units consumed.
 
-Program checks validity of input (units must be ≥ 0).
+2. Program checks validity of input (units must be ≥ 0).
 
 Applies conditions:
 
@@ -56,15 +61,18 @@ Displays result:
 Total electricity bill based on slab calculation.
 
 Invalid input if units are negative.
+
 # Grade_Evaluator.cpp
+
 Purpose:  
+
 Assigns a grade to a student based on their marks.
 
 Process:
 
-User enters their marks.
+1. User enters their marks.
 
-Program checks the input value.
+2. Program checks the input value.
 
 Applies conditions:
 
@@ -81,15 +89,44 @@ Applies conditions:
 Displays result:
 
 Grade A, B, C, D (Pass), or F (Fail) depending on marks.
+
+# Simple_Calculator.cpp
+
+Process:
+
+User enters the first number.
+
+User enters the second number.
+
+User enters an operator (+, -, *, /).
+
+Program checks the operator and applies conditions:
+
+1. ‘+’ → Adds the two numbers.
+
+2. ‘-’ → Subtracts the second number from the first.
+
+3. ‘*’ → Multiplies the two numbers.
+
+4. ‘/’ → Divides the first number by the second, with error handling for division by zero.
+
+5. Invalid operator → Displays an error message.
+
+Displays result:
+
+Arithmetic output or error message
+
 # Voting_Eligibility.cpp
+
 Purpose:  
+
 Determines whether a person is eligible to vote based on their age.
 
 Process:
 
-User enters their age.
+1. User enters their age.
 
-Program checks the input value.
+2. Program checks the input value.
 
 Applies condition:
 
@@ -102,14 +139,16 @@ Displays result:
 "You Are Eligible To Vote" or "You Are Not Eligible To Vote".
 
 # Water_State_Checker.cpp
+
 Purpose:  
+
 Determines the physical state of water (solid, liquid, or gaseous) based on its temperature in Celsius.
 
 Process:
 
-User enters the temperature of water in Celsius.
+1. User enters the temperature of water in Celsius.
 
-Program checks the input value.
+2. Program checks the input value.
 
 Applies conditions:
 
