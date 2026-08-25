@@ -34,6 +34,45 @@ Applies conditions:
 
 3. Displays result: Pass, Fail due to cutoff, Fail overall, or Invalid input.
 
+# Day_Name_And_Type.cpp
+
+Purpose:  
+Determines the name of the day (Monday to Sunday) based on a number entered by the user (1–7) and classifies it as either a weekday or weekend.
+
+Process:
+
+1. User enters a day number between 1 and 7.
+
+2. Program checks the input value.
+
+3. Applies conditions using a switch statement:
+
+1 → Monday
+
+2 → Tuesday
+
+3 → Wednesday
+
+4 → Thursday
+
+5 → Friday
+
+6 → Saturday
+
+7 → Sunday
+
+Invalid input → Displays error message.
+
+4. After displaying the day name, another switch statement is used to classify the day:
+
+Day 1–5 (Monday–Friday) → Weekday.
+
+Day 6–7 (Saturday–Sunday) → Weekend.
+
+5. Displays result:
+
+Day name and whether it is a weekday or weekend.
+
 # Electricity_Bill_Calculator.cpp
 
 Purpose:
