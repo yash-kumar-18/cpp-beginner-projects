@@ -7,14 +7,15 @@ int age;
 cout << "Enter Your Age: ";
 // age input
 cin >> age;
-// using condition to stop user from entering negative age
+// condion
 if (age<=0)
-{cout << "Age Must Be Greater Than Zero" << endl ;
-    return 0;
-}
-// using ternaary operator
-else
- (age>=18) ? cout << "You Are Eligible To Vote" : cout << "Error: You Are Not Eligible To Vote" ;
-
-    return 0;
+{ cout << "Error: Age Must Be Greater Than Zero" << endl;
+return 0;}
+else if (age <18)
+{ cout << "You Are Not Eligible To Vote" << endl ;
+ return 0; }
+    else {
+cout << "You Are Eligible To Vote" << endl ;
+    }
+ return 0;
 }
