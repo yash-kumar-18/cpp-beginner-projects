@@ -129,6 +129,56 @@ Displays result:
 
 Grade A, B, C, D (Pass), or F (Fail) depending on marks.
 
+# Mini_ATM.cpp
+
+Purpose:  
+Simulates a simple ATM interface where a user can check balance, deposit money, withdraw money, or exit.
+
+Process:
+
+1. Program starts with a default balance = 1000.0.
+
+2. Displays a menu with four options:
+
+1 → Check Balance
+
+2 → Deposit Money
+
+3 → Withdraw Money
+
+4 → Exit
+
+3. User enters a choice.
+
+4. Program uses a switch statement to execute the selected option:
+
+Check Balance (1): Displays current account balance.
+
+Deposit Money (2):
+
+-  Prompts user to enter deposit amount.
+
+- If amount > 0 → Adds to balance and displays closing balance.
+
+- Else → Displays error message.
+
+Withdraw Money (3):
+
+ - Prompts user to enter withdrawal amount.
+
+ - If amount > 0 and ≤ balance → Deducts from balance and displays closing balance.
+
+ - If amount > balance → Displays error message.
+
+ - If amount ≤ 0 → Displays error message.
+
+Exit (4): Displays a thank-you message.
+
+Invalid choice: Displays error message.
+
+Program ends with return 0;.
+
+
 # Simple_Calculator.cpp
 
 Process:
