@@ -205,6 +205,38 @@ Displays result:
 
 Arithmetic output or error message
 
+# Table_Maker.cpp
+
+Purpose:  
+Generates the multiplication table of a given number up to a specified limit.
+
+Process:
+
+1. User enters the number for which the table should be generated.
+
+2. Program checks validity:
+
+     If the number ≤ 0 → Displays error message and stops execution.
+
+3. User enters the limit (up to which the table should be printed).
+
+4. Program applies conditions:
+
+     If the limit is valid (greater than 0 and ≤ 10,000), it proceeds.
+
+     If invalid, it would normally display an error (though in this version, the error checks are         commented out).
+
+5. Uses a for loop to print the multiplication table:
+
+     Iterates from 1 to the entered limit.
+
+     Prints each line in the format:
+
+{ Code
+number x i = result }
+
+6. Displays the complete multiplication table.
+
 # Voting_Eligibility.cpp
 
 Purpose:  
