@@ -203,7 +203,44 @@ Program checks the operator and applies conditions:
 
 Displays result:
 
-Arithmetic output or error message
+Arithmetic output or error message.
+
+# Simple_Calculator.cpp
+
+Purpose:  
+Calculates the fare for a metro journey based on departure and destination points, ensuring valid input and sufficient card balance.
+
+Process:
+
+1. Program starts with a default card balance = 200.
+
+2. Displays a menu of departure points (Sector‑1 to Sector‑5).
+
+3. User enters a departure point number.
+
+     If invalid (not between 1–5), program shows error and stops.
+
+4. Displays a menu of destination points (Sector‑1 to Sector‑5).
+
+5. User enters a destination point number.
+
+     If invalid (not between 1–5), program shows error and stops.
+
+     If departure and destination are the same, program shows error and stops.
+
+6. Program calculates fare:
+
+     Fare = |departure – destination| × 10.
+
+7. Displays the total fare.
+
+8. Checks if card balance is sufficient:
+
+     If balance < fare → Displays error message.
+
+     Else → Deducts fare and displays closing balance.
+
+9. Program ends with return 0;.
 
 # Table_Maker.cpp
 
