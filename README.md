@@ -178,6 +178,54 @@ Invalid choice: Displays error message.
 
 Program ends with return 0;.
 
+# Movie_Ticket_Counter.cpp
+
+Purpose:  
+Calculates ticket prices and total cost for different cinema options (Standard Screen, IMAX 3D, VIP Lounge), with special pricing for senior citizens.
+
+Process:
+
+1. Program displays a menu of ticket options:
+
+    1 → Standard Screen
+
+    2 → IMAX 3D
+
+    3 → VIP Lounge
+
+2. User enters a choice.
+
+    If invalid (≤0 or not between 1–3), program shows error and stops.
+
+3. User enters their age.
+
+    If age ≤0, program shows error and stops.
+
+4. Program applies conditions:
+
+    Standard Screen (1): ₹150 per person.
+
+    IMAX 3D (2): ₹300 per person.
+
+    VIP Lounge (3):
+
+      Age ≥60 → ₹400 per person (senior citizen discount).
+
+      Age <60 → ₹500 per person.
+
+5. User enters the number of tickets.
+
+    If persons ≤0, program shows error and stops.
+   
+6. Program calculates total cost:
+
+    Standard Screen: persons × 150.
+
+    IMAX 3D: persons × 300.
+
+    VIP Lounge: persons × 400 (senior) or persons × 500 (non-senior).
+
+7. Displays the total amount payable.
 
 # Simple_Calculator.cpp
 
