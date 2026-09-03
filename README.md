@@ -227,6 +227,41 @@ Process:
 
 7. Displays the total amount payable.
 
+# Petrol_Pump_Dispensor.cpp
+
+## Purpose
+Calculates the fuel bill based on the type of fuel selected and the dispensing mode (by amount in rupees or by volume in liters).
+
+---
+
+## Process
+1. **Fuel Type Selection**
+   - Program displays a menu of fuel types:
+     - 1 → Petrol (₹90/L)
+     - 2 → Diesel (₹85/L)
+     - 3 → CNG (₹65/L)
+   - User enters a fuel type option number.
+   - If invalid (not 1–3), program shows error and stops.
+
+2. **Dispensing Mode Selection**
+   - Program displays dispensing modes:
+     - 1 → By Amount (in ₹)
+     - 2 → By Volume (in L)
+   - User enters a dispensing choice.
+   - If invalid (not 1–2), program shows error and stops.
+
+3. **Input of Amount/Volume**
+   - User enters the amount (in ₹) or volume (in L).
+   - If ≤ 0, program shows error and stops.
+
+4. **Fare Calculation**
+   - **By Amount:** Displays total bill as entered amount and calculates liters received.
+   - **By Volume:** Multiplies entered liters by fuel price to calculate total bill.
+
+5. **Result Display**
+   - Shows the **total fuel bill**.
+   - If dispensing by amount, also shows the **liters received**.
+
 # Simple_Calculator.cpp
 
 Process:
