@@ -124,8 +124,8 @@ Calculates the electricity bill based on the number of units consumed, applying 
 
 # Mini_ATM.cpp
 
-## Purpose
 
+## Purpose
 Simulates a simple ATM interface where a user can check balance, deposit money, withdraw money, or exit.
 
 ---
@@ -155,7 +155,16 @@ Simulates a simple ATM interface where a user can check balance, deposit money, 
      - If amount > 0 and ≤ balance → Deducts from balance and displays closing balance.  
      - If amount > balance → Displays error message.  
      - If amount ≤ 0 → Displays error message.  
-   - **Exit (4):** Displays a thank-you message
+   - **Exit (4):** Displays a thank-you message.  
+   - **Invalid Choice:** Displays error message.  
+
+5. **Termination**
+   - Program ends with `return 0;`.
+
+---
+
+## Example Runs
+     
 # Movie_Ticket_Counter.cpp
 
 Purpose:  
