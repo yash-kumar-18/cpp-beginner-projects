@@ -126,6 +126,7 @@ Calculates the electricity bill based on the number of units consumed, applying 
 
 
 ## Purpose
+
 Simulates a simple ATM interface where a user can check balance, deposit money, withdraw money, or exit.
 
 ---
@@ -162,61 +163,55 @@ Simulates a simple ATM interface where a user can check balance, deposit money, 
    - Program ends with `return 0;`.
 
 ---
-
-## Example Runs
      
 # Movie_Ticket_Counter.cpp
 
-Purpose:  
+## Purpose
+
 Calculates ticket prices and total cost for different cinema options (Standard Screen, IMAX 3D, VIP Lounge), with special pricing for senior citizens.
 
-Process:
+---
 
-1. Program displays a menu of ticket options:
+## Process
+1. **Ticket Option Menu**
+   - Program displays a menu of ticket options:
+     - 1 → Standard Screen  
+     - 2 → IMAX 3D  
+     - 3 → VIP Lounge  
 
-    1 → Standard Screen
+2. **User Choice**
+   - User enters a choice.  
+   - If invalid (≤0 or not between 1–3), program shows error and stops.  
 
-    2 → IMAX 3D
+3. **Age Input**
+   - User enters their age.  
+   - If age ≤0, program shows error and stops.  
 
-    3 → VIP Lounge
+4. **Pricing Conditions**
+   - **Standard Screen (1):** ₹150 per person.  
+   - **IMAX 3D (2):** ₹300 per person.  
+   - **VIP Lounge (3):**  
+     - Age ≥60 → ₹400 per person (senior citizen discount).  
+     - Age <60 → ₹500 per person.  
 
-2. User enters a choice.
+5. **Number of Tickets**
+   - User enters the number of tickets.  
+   - If persons ≤0, program shows error and stops.  
 
-    If invalid (≤0 or not between 1–3), program shows error and stops.
+6. **Total Cost Calculation**
+   - **Standard Screen:** persons × 150.  
+   - **IMAX 3D:** persons × 300.  
+   - **VIP Lounge:** persons × 400 (senior) or persons × 500 (non-senior).  
 
-3. User enters their age.
+7. **Result Display**
+   - Program displays the **total amount payable**.  
 
-    If age ≤0, program shows error and stops.
-
-4. Program applies conditions:
-
-    Standard Screen (1): ₹150 per person.
-
-    IMAX 3D (2): ₹300 per person.
-
-    VIP Lounge (3):
-
-      Age ≥60 → ₹400 per person (senior citizen discount).
-
-      Age <60 → ₹500 per person.
-
-5. User enters the number of tickets.
-
-    If persons ≤0, program shows error and stops.
-   
-6. Program calculates total cost:
-
-    Standard Screen: persons × 150.
-
-    IMAX 3D: persons × 300.
-
-    VIP Lounge: persons × 400 (senior) or persons × 500 (non-senior).
-
-7. Displays the total amount payable.
+---
 
 # Petrol_Pump_Dispensor.cpp
 
 ## Purpose
+
 Calculates the fuel bill based on the type of fuel selected and the dispensing mode (by amount in rupees or by volume in liters).
 
 ---
@@ -251,66 +246,77 @@ Calculates the fuel bill based on the type of fuel selected and the dispensing m
 
 # Simple_Calculator.cpp
 
-Process:
+## Purpose
+Performs basic arithmetic operations (+, -, ×, ÷) on two numbers entered by the user.
 
-User enters the first number.
+---
 
-User enters the second number.
+## Process
+1. **Input First Number**
+   - User enters the first number.
 
-User enters an operator (+, -, *, /).
+2. **Input Second Number**
+   - User enters the second number.
 
-Program checks the operator and applies conditions:
+3. **Input Operator**
+   - User enters an operator (`+`, `-`, `*`, `/`).
 
-1. ‘+’ → Adds the two numbers.
+4. **Validation & Conditions**
+   - Program checks the operator and applies conditions:
+     - `+` → Adds the two numbers.  
+     - `-` → Subtracts the second number from the first.  
+     - `*` → Multiplies the two numbers.  
+     - `/` → Divides the first number by the second, with error handling for division by zero.  
+     - Invalid operator → Displays an error message.  
 
-2. ‘-’ → Subtracts the second number from the first.
+5. **Result Display**
+   - Shows the arithmetic output or an error message.
 
-3. ‘*’ → Multiplies the two numbers.
+---
 
-4. ‘/’ → Divides the first number by the second, with error handling for division by zero.
+# Smart_Card_Fare_System.cpp
 
-5. Invalid operator → Displays an error message.
-
-Displays result:
-
-Arithmetic output or error message.
-
-# Simple_Calculator.cpp
-
-Purpose:  
+## Purpose
 Calculates the fare for a metro journey based on departure and destination points, ensuring valid input and sufficient card balance.
 
-Process:
+---
 
-1. Program starts with a default card balance = 200.
+## Process
+1. **Initialization**
+   - Program starts with a default card balance = 200.
 
-2. Displays a menu of departure points (Sector‑1 to Sector‑5).
+2. **Departure Point Selection**
+   - Displays a menu of departure points (Sector‑1 to Sector‑5).
+   - User enters a departure point number.
+   - If invalid (not between 1–5), program shows error and stops.
 
-3. User enters a departure point number.
+3. **Destination Point Selection**
+   - Displays a menu of destination points (Sector‑1 to Sector‑5).
+   - User enters a destination point number.
+   - If invalid (not between 1–5), program shows error and stops.
+   - If departure and destination are the same, program shows error and stops.
 
-     If invalid (not between 1–5), program shows error and stops.
+4. **Fare Calculation**
+   - Fare = |departure – destination| × 10.
 
-4. Displays a menu of destination points (Sector‑1 to Sector‑5).
+5. **Result Display**
+   - Displays the total fare.
 
-5. User enters a destination point number.
+6. **Balance Check**
+   - If card balance < fare → Displays error message.  
+   - Else → Deducts fare and displays closing balance.
 
-     If invalid (not between 1–5), program shows error and stops.
+7. **Termination**
+   - Program ends with `return 0;`.
 
-     If departure and destination are the same, program shows error and stops.
+---
 
-6. Program calculates fare:
+## Compilation & Execution
+To compile and run the program:
+```bash
+g++ MetroFareCalculator.cpp -o MetroFare
+./MetroFare
 
-     Fare = |departure – destination| × 10.
-
-7. Displays the total fare.
-
-8. Checks if card balance is sufficient:
-
-     If balance < fare → Displays error message.
-
-     Else → Deducts fare and displays closing balance.
-
-9. Program ends with return 0;.
 
 # Table_Maker.cpp
 
