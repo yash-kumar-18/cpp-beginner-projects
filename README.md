@@ -4,180 +4,158 @@ A collection of beginner-friendly programming projects and coding exercises buil
 
 # Bill_Splitter.cpp
 
-Purpose: Divides a total bill amount among a given number of persons.
+## Purpose
 
-Process:
+Divides a total bill amount among a given number of persons.
 
-1. User enters the total bill amount.
+---
 
-2. User enters the number of persons.
+## Process
+1. **Input Total Bill Amount**
+   - User enters the total bill amount.
 
-3. Program calculates and displays the bill per person.
+2. **Input Number of Persons**
+   - User enters the number of persons sharing the bill.
+
+3. **Calculation**
+   - Program divides the total bill amount by the number of persons.
+
+4. **Result Display**
+   - Shows the bill per person.
+
+---
 
 # Cutoff_Checker.cpp
 
-Purpose: Determines whether a student passes or fails based on theory and practical marks.
+## Purpose
 
-Process:
+Determines whether a student passes or fails based on theory and practical marks.
 
-1. User enters theory marks (0–50).
+---
 
-2. User enters practical marks (0–50).
+## Process
+1. **Input Theory Marks**
+   - User enters theory marks (0–50).
 
-3. Program checks validity of input.
+2. **Input Practical Marks**
+   - User enters practical marks (0–50).
 
-Applies conditions:
+3. **Validation**
+   - Program checks validity of input.
+   - If marks are outside the valid range, it displays **Invalid Input**.
 
-1. Overall cutoff → total marks ≥ 40.
+4. **Conditions Applied**
+   - **Overall cutoff:** total marks ≥ 40.
+   - **Individual cutoff:** both theory and practical ≥ 15.
 
-2. Individual cutoff → both theory and practical ≥ 15.
+5. **Result Display**
+   - If both conditions are satisfied → **Pass**.
+   - If overall cutoff is met but one subject < 15 → **Fail due to cutoff**.
+   - If overall cutoff is not met → **Fail overall**.
+   - If inputs are invalid → **Invalid input**.
 
-3. Displays result: Pass, Fail due to cutoff, Fail overall, or Invalid input.
+---
 
 # Day_Name_And_Type.cpp
 
-Purpose:  
+
+## Purpose
+
 Determines the name of the day (Monday to Sunday) based on a number entered by the user (1–7) and classifies it as either a weekday or weekend.
 
-Process:
+---
 
-1. User enters a day number between 1 and 7.
+## Process
+1. **Input Day Number**
+   - User enters a day number between 1 and 7.
 
-2. Program checks the input value.
+2. **Validation**
+   - Program checks the input value.
+   - If invalid (not between 1–7), program displays an error message.
 
-3. Applies conditions using a switch statement:
+3. **Day Name Determination**
+   - Applies conditions using a `switch` statement:
+     - 1 → Monday  
+     - 2 → Tuesday  
+     - 3 → Wednesday  
+     - 4 → Thursday  
+     - 5 → Friday  
+     - 6 → Saturday  
+     - 7 → Sunday  
+     - Invalid input → Displays error message.
 
-1 → Monday
+4. **Weekday/Weekend Classification**
+   - After displaying the day name, another `switch` statement is used to classify the day:
+     - Day 1–5 (Monday–Friday) → Weekday.  
+     - Day 6–7 (Saturday–Sunday) → Weekend.  
 
-2 → Tuesday
+5. **Result Display**
+   - Shows the **day name** and whether it is a **weekday or weekend**.
 
-3 → Wednesday
-
-4 → Thursday
-
-5 → Friday
-
-6 → Saturday
-
-7 → Sunday
-
-Invalid input → Displays error message.
-
-4. After displaying the day name, another switch statement is used to classify the day:
-
-Day 1–5 (Monday–Friday) → Weekday.
-
-Day 6–7 (Saturday–Sunday) → Weekend.
-
-5. Displays result:
-
-Day name and whether it is a weekday or weekend.
+---
 
 # Electricity_Bill_Calculator.cpp
 
-Purpose:
+## Purpose
 
 Calculates the electricity bill based on the number of units consumed, applying slab-wise rates.
 
-Process:
+---
 
-1. User enters the number of units consumed.
+## Process
+1. **Input Units Consumed**
+   - User enters the number of units consumed.
 
-2. Program checks validity of input (units must be ≥ 0).
+2. **Validation**
+   - Program checks validity of input (units must be ≥ 0).
+   - If invalid (negative units), program displays **Invalid Input**.
 
-Applies conditions:
+3. **Slab-Wise Calculation**
+   - Up to 100 units → ₹5 per unit.  
+   - 101–200 units → First 100 units at ₹5, remaining at ₹7 per unit.  
+   - 201–300 units → First 100 units at ₹5, next 100 at ₹7, remaining at ₹9 per unit.  
+   - Above 300 units → First 100 units at ₹5, next 100 at ₹7, next 100 at ₹9, remaining at ₹11 per unit.  
 
-1. Up to 100 units → ₹5 per unit.
+4. **Result Display**
+   - Shows the **total electricity bill** based on slab calculation.  
+   - Displays **Invalid Input** if units are negative.
 
-2. 101–200 units → First 100 units at ₹5, remaining at ₹7 per unit.
-
-3. 201–300 units → First 100 units at ₹5, next 100 at ₹7, remaining at ₹9 per unit.
-
-4. Above 300 units → First 100 units at ₹5, next 100 at ₹7, next 100 at ₹9, remaining at ₹11 per unit.
-
-Displays result:
-
-Total electricity bill based on slab calculation.
-
-Invalid input if units are negative.
-
-# Grade_Evaluator.cpp
-
-Purpose:  
-
-Assigns a grade to a student based on their marks.
-
-Process:
-
-1. User enters their marks.
-
-2. Program checks the input value.
-
-Applies conditions:
-
-1. Marks ≥ 90 → Grade A
-
-2. Marks ≥ 75 and < 90 → Grade B
-
-3. Marks ≥ 50 and < 75 → Grade C
-
-4. Marks ≥ 33 and < 50 → Grade D (Pass)
-
-5. Marks < 33 → Grade F (Fail)
-
-Displays result:
-
-Grade A, B, C, D (Pass), or F (Fail) depending on marks.
+---
 
 # Mini_ATM.cpp
 
-Purpose:  
+## Purpose
+
 Simulates a simple ATM interface where a user can check balance, deposit money, withdraw money, or exit.
 
-Process:
+---
 
-1. Program starts with a default balance = 1000.0.
+## Process
+1. **Initialization**
+   - Program starts with a default balance = 1000.0.
 
-2. Displays a menu with four options:
+2. **Menu Display**
+   - Displays a menu with four options:
+     - 1 → Check Balance  
+     - 2 → Deposit Money  
+     - 3 → Withdraw Money  
+     - 4 → Exit  
 
-1 → Check Balance
+3. **User Choice**
+   - User enters a choice.
 
-2 → Deposit Money
-
-3 → Withdraw Money
-
-4 → Exit
-
-3. User enters a choice.
-
-4. Program uses a switch statement to execute the selected option:
-
-Check Balance (1): Displays current account balance.
-
-Deposit Money (2):
-
--  Prompts user to enter deposit amount.
-
-- If amount > 0 → Adds to balance and displays closing balance.
-
-- Else → Displays error message.
-
-Withdraw Money (3):
-
- - Prompts user to enter withdrawal amount.
-
- - If amount > 0 and ≤ balance → Deducts from balance and displays closing balance.
-
- - If amount > balance → Displays error message.
-
- - If amount ≤ 0 → Displays error message.
-
-Exit (4): Displays a thank-you message.
-
-Invalid choice: Displays error message.
-
-Program ends with return 0;.
-
+4. **Switch Statement Execution**
+   - **Check Balance (1):** Displays current account balance.  
+   - **Deposit Money (2):**  
+     - Prompts user to enter deposit amount.  
+     - If amount > 0 → Adds to balance and displays closing balance.  
+     - Else → Displays error message.  
+   - **Withdraw Money (3):**  
+     - Prompts user to enter withdrawal amount.  
+     - If amount > 0 and ≤ balance → Deducts from balance and displays closing balance.  
+     - If amount > balance → Displays error message.  
+     - If amount ≤ 0 → Displays error message.  
+   - **Exit (4):** Displays a thank-you message
 # Movie_Ticket_Counter.cpp
 
 Purpose:  
