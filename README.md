@@ -277,6 +277,7 @@ Performs basic arithmetic operations (+, -, ×, ÷) on two numbers entered by th
 # Smart_Card_Fare_System.cpp
 
 ## Purpose
+
 Calculates the fare for a metro journey based on departure and destination points, ensuring valid input and sufficient card balance.
 
 ---
@@ -311,88 +312,87 @@ Calculates the fare for a metro journey based on departure and destination point
 
 ---
 
-## Compilation & Execution
-To compile and run the program:
-```bash
-g++ MetroFareCalculator.cpp -o MetroFare
-./MetroFare
-
 
 # Table_Maker.cpp
 
-Purpose:  
+
+## Purpose
+
 Generates the multiplication table of a given number up to a specified limit.
 
-Process:
+---
 
-1. User enters the number for which the table should be generated.
+## Process
+1. **Input Number**
+   - User enters the number for which the table should be generated.
+   - If the number ≤ 0 → Displays error message and stops execution.
 
-2. Program checks validity:
+2. **Input Limit**
+   - User enters the limit (up to which the table should be printed).
+   - If the limit is valid (greater than 0 and ≤ 10,000), it proceeds.
+   - If invalid, it would normally display an error (though in this version, the error checks are commented out).
 
-     If the number ≤ 0 → Displays error message and stops execution.
+3. **Table Generation**
+   - Uses a `for` loop to print the multiplication table.
+   - Iterates from 1 to the entered limit.
+   - Prints each line in the format:  
+     ```
+     number x i = result
+     ```
 
-3. User enters the limit (up to which the table should be printed).
+4. **Result Display**
+   - Displays the complete multiplication table.
 
-4. Program applies conditions:
-
-     If the limit is valid (greater than 0 and ≤ 10,000), it proceeds.
-
-     If invalid, it would normally display an error (though in this version, the error checks are         commented out).
-
-5. Uses a for loop to print the multiplication table:
-
-     Iterates from 1 to the entered limit.
-
-     Prints each line in the format:
-
-{ Code
-number x i = result }
-
-6. Displays the complete multiplication table.
+---
 
 # Voting_Eligibility.cpp
 
-Purpose:  
 
+## Purpose
 Determines whether a person is eligible to vote based on their age.
 
-Process:
+---
 
-1. User enters their age.
+## Process
+1. **Input Age**
+   - User enters their age.
 
-2. Program checks the input value.
+2. **Validation & Conditions**
+   - Program checks the input value.
+   - Applies conditions:
+     - Age ≥ 18 → Eligible to vote.  
+     - Age < 18 → Not eligible to vote.  
 
-Applies condition:
+3. **Result Display**
+   - Shows either:
+     - "You Are Eligible To Vote"  
+     - "You Are Not Eligible To Vote"
 
-1. Age ≥ 18 → Eligible to vote.
-
-2. Age < 18 → Not eligible to vote.
-
-Displays result:
-
-"You Are Eligible To Vote" or "You Are Not Eligible To Vote".
+---
 
 # Water_State_Checker.cpp
 
-Purpose:  
 
+## Purpose
 Determines the physical state of water (solid, liquid, or gaseous) based on its temperature in Celsius.
 
-Process:
+---
 
-1. User enters the temperature of water in Celsius.
+## Process
+1. **Input Temperature**
+   - User enters the temperature of water in Celsius.
 
-2. Program checks the input value.
+2. **Validation & Conditions**
+   - Program checks the input value.
+   - Applies conditions:
+     - Temperature < 0°C → Water is in **solid state** (ice).  
+     - Temperature ≥ 100°C → Water is in **gaseous state** (steam).  
+     - Temperature between 0°C and 100°C → Water is in **liquid state**.  
 
-Applies conditions:
+3. **Result Display**
+   - Shows one of the following messages:
+     - "Your Water Is In Solid State"  
+     - "Your Water Is In Liquid State"  
+     - "Your Water Is In Gaseous State"
 
-1. Temperature < 0°C → Water is in solid state (ice).
-
-2. Temperature ≥ 100°C → Water is in gaseous state (steam).
-
-3. Temperature between 0°C and 100°C → Water is in liquid state.
-
-Displays result:
-
-"Your Water Is In Solid State", "Your Water Is In Liquid State", or "Your Water Is In Gaseous State".
-
+---
