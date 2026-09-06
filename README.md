@@ -1,438 +1,70 @@
 # cpp-beginner-projects
 
-A collection of beginner-friendly programming projects and coding exercises built while learning foundational logic. I will be working constantly and will upload some basic projects in this repository and will update them if needed.
+## 📖 Overview
+This repository contains beginner-friendly C++ projects created while learning programming fundamentals.
 
-# Bill_Splitter.cpp
-
-## Purpose
-
-Divides a total bill amount among a given number of persons.
-
----
-
-## Process
-1. **Input Total Bill Amount**
-   - User enters the total bill amount.
-
-2. **Input Number of Persons**
-   - User enters the number of persons sharing the bill.
-
-3. **Calculation**
-   - Program divides the total bill amount by the number of persons.
-
-4. **Result Display**
-   - Shows the bill per person.
+It is designed to practice:
+- Input / Output
+- Conditional statements
+- Loops
+- Switch-case
+- Basic validation and calculations
 
 ---
 
-# Cutoff_Checker.cpp
+## ⚙️ Repository Structure
+Each `.cpp` file is an independent console program.
 
-## Purpose
-
-Determines whether a student passes or fails based on theory and practical marks.
-
----
-
-## Process
-1. **Input Theory Marks**
-   - User enters theory marks (0–50).
-
-2. **Input Practical Marks**
-   - User enters practical marks (0–50).
-
-3. **Validation**
-   - Program checks validity of input.
-   - If marks are outside the valid range, it displays **Invalid Input**.
-
-4. **Conditions Applied**
-   - **Overall cutoff:** total marks ≥ 40.
-   - **Individual cutoff:** both theory and practical ≥ 15.
-
-5. **Result Display**
-   - If both conditions are satisfied → **Pass**.
-   - If overall cutoff is met but one subject < 15 → **Fail due to cutoff**.
-   - If overall cutoff is not met → **Fail overall**.
-   - If inputs are invalid → **Invalid input**.
+### 📂 Projects
+- **Bill_Splitter.cpp** – Split a bill among multiple people.
+- **Cutoff_Checker.cpp** – Check pass/fail with overall and subject cutoffs.
+- **Day_Name_And_Type.cpp** – Find day name and identify weekday/weekend.
+- **Electricity_Bill_Calculator.cpp** – Calculate bill using unit slabs.
+- **Grade_Evaluator.cpp** – Evaluate grade from marks.
+- **Mini_ATM.cpp** – Basic ATM simulation (balance, deposit, withdraw).
+- **Movie_Ticket_Counter.cpp** – Calculate ticket amount by category.
+- **Petrol_Pump_Dispensor.cpp** – Fuel billing by amount or liters.
+- **Simple_Calculator.cpp** – Perform basic arithmetic operations.
+- **Smart_Card_Fare_System.cpp** – Metro fare and balance check system.
+- **Table_Maker.cpp** – Generate multiplication tables.
+- **Temperature_Converter.cpp** – Convert Celsius and Fahrenheit.
+- **Voting_Eligibility_Checker.cpp** – Check voting eligibility by age.
+- **Water_State_Checker.cpp** – Determine water state from temperature.
 
 ---
 
-# Day_Name_And_Type.cpp
-
-
-## Purpose
-
-Determines the name of the day (Monday to Sunday) based on a number entered by the user (1–7) and classifies it as either a weekday or weekend.
+## 🛠️ Requirements
+- A C++ compiler (e.g., `g++`)
+- Terminal / command prompt
 
 ---
 
-## Process
-1. **Input Day Number**
-   - User enters a day number between 1 and 7.
+## ▶️ How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yash-kumar-18/cpp-beginner-projects.git
+   cd cpp-beginner-projects
+   ```
 
-2. **Validation**
-   - Program checks the input value.
-   - If invalid (not between 1–7), program displays an error message.
+2. Compile any file (example: `Simple_Calculator.cpp`):
+   ```bash
+   g++ Simple_Calculator.cpp -o Simple_Calculator
+   ```
 
-3. **Day Name Determination**
-   - Applies conditions using a `switch` statement:
-     - 1 → Monday  
-     - 2 → Tuesday  
-     - 3 → Wednesday  
-     - 4 → Thursday  
-     - 5 → Friday  
-     - 6 → Saturday  
-     - 7 → Sunday  
-     - Invalid input → Displays error message.
+3. Run the program:
+   ```bash
+   ./Simple_Calculator
+   ```
 
-4. **Weekday/Weekend Classification**
-   - After displaying the day name, another `switch` statement is used to classify the day:
-     - Day 1–5 (Monday–Friday) → Weekday.  
-     - Day 6–7 (Saturday–Sunday) → Weekend.  
-
-5. **Result Display**
-   - Shows the **day name** and whether it is a **weekday or weekend**.
+4. Repeat the same steps for any other `.cpp` file.
 
 ---
 
-# Electricity_Bill_Calculator.cpp
-
-## Purpose
-
-Calculates the electricity bill based on the number of units consumed, applying slab-wise rates.
+## 📄 License
+This project is licensed under the **MIT License**.
+See the full license text in the [`LICENSE`](./LICENSE) file.
 
 ---
 
-## Process
-1. **Input Units Consumed**
-   - User enters the number of units consumed.
-
-2. **Validation**
-   - Program checks validity of input (units must be ≥ 0).
-   - If invalid (negative units), program displays **Invalid Input**.
-
-3. **Slab-Wise Calculation**
-   - Up to 100 units → ₹5 per unit.  
-   - 101–200 units → First 100 units at ₹5, remaining at ₹7 per unit.  
-   - 201–300 units → First 100 units at ₹5, next 100 at ₹7, remaining at ₹9 per unit.  
-   - Above 300 units → First 100 units at ₹5, next 100 at ₹7, next 100 at ₹9, remaining at ₹11 per unit.  
-
-4. **Result Display**
-   - Shows the **total electricity bill** based on slab calculation.  
-   - Displays **Invalid Input** if units are negative.
-
----
-
-# Mini_ATM.cpp
-
-
-## Purpose
-
-Simulates a simple ATM interface where a user can check balance, deposit money, withdraw money, or exit.
-
----
-
-## Process
-1. **Initialization**
-   - Program starts with a default balance = 1000.0.
-
-2. **Menu Display**
-   - Displays a menu with four options:
-     - 1 → Check Balance  
-     - 2 → Deposit Money  
-     - 3 → Withdraw Money  
-     - 4 → Exit  
-
-3. **User Choice**
-   - User enters a choice.
-
-4. **Switch Statement Execution**
-   - **Check Balance (1):** Displays current account balance.  
-   - **Deposit Money (2):**  
-     - Prompts user to enter deposit amount.  
-     - If amount > 0 → Adds to balance and displays closing balance.  
-     - Else → Displays error message.  
-   - **Withdraw Money (3):**  
-     - Prompts user to enter withdrawal amount.  
-     - If amount > 0 and ≤ balance → Deducts from balance and displays closing balance.  
-     - If amount > balance → Displays error message.  
-     - If amount ≤ 0 → Displays error message.  
-   - **Exit (4):** Displays a thank-you message.  
-   - **Invalid Choice:** Displays error message.  
-
-5. **Termination**
-   - Program ends with `return 0;`.
-
----
-     
-# Movie_Ticket_Counter.cpp
-
-## Purpose
-
-Calculates ticket prices and total cost for different cinema options (Standard Screen, IMAX 3D, VIP Lounge), with special pricing for senior citizens.
-
----
-
-## Process
-1. **Ticket Option Menu**
-   - Program displays a menu of ticket options:
-     - 1 → Standard Screen  
-     - 2 → IMAX 3D  
-     - 3 → VIP Lounge  
-
-2. **User Choice**
-   - User enters a choice.  
-   - If invalid (≤0 or not between 1–3), program shows error and stops.  
-
-3. **Age Input**
-   - User enters their age.  
-   - If age ≤0, program shows error and stops.  
-
-4. **Pricing Conditions**
-   - **Standard Screen (1):** ₹150 per person.  
-   - **IMAX 3D (2):** ₹300 per person.  
-   - **VIP Lounge (3):**  
-     - Age ≥60 → ₹400 per person (senior citizen discount).  
-     - Age <60 → ₹500 per person.  
-
-5. **Number of Tickets**
-   - User enters the number of tickets.  
-   - If persons ≤0, program shows error and stops.  
-
-6. **Total Cost Calculation**
-   - **Standard Screen:** persons × 150.  
-   - **IMAX 3D:** persons × 300.  
-   - **VIP Lounge:** persons × 400 (senior) or persons × 500 (non-senior).  
-
-7. **Result Display**
-   - Program displays the **total amount payable**.  
-
----
-
-# Petrol_Pump_Dispensor.cpp
-
-## Purpose
-
-Calculates the fuel bill based on the type of fuel selected and the dispensing mode (by amount in rupees or by volume in liters).
-
----
-
-## Process
-1. **Fuel Type Selection**
-   - Program displays a menu of fuel types:
-     - 1 → Petrol (₹90/L)
-     - 2 → Diesel (₹85/L)
-     - 3 → CNG (₹65/L)
-   - User enters a fuel type option number.
-   - If invalid (not 1–3), program shows error and stops.
-
-2. **Dispensing Mode Selection**
-   - Program displays dispensing modes:
-     - 1 → By Amount (in ₹)
-     - 2 → By Volume (in L)
-   - User enters a dispensing choice.
-   - If invalid (not 1–2), program shows error and stops.
-
-3. **Input of Amount/Volume**
-   - User enters the amount (in ₹) or volume (in L).
-   - If ≤ 0, program shows error and stops.
-
-4. **Fare Calculation**
-   - **By Amount:** Displays total bill as entered amount and calculates liters received.
-   - **By Volume:** Multiplies entered liters by fuel price to calculate total bill.
-
-5. **Result Display**
-   - Shows the **total fuel bill**.
-   - If dispensing by amount, also shows the **liters received**.
-
-# Simple_Calculator.cpp
-
-## Purpose
-Performs basic arithmetic operations (+, -, ×, ÷) on two numbers entered by the user.
-
----
-
-## Process
-1. **Input First Number**
-   - User enters the first number.
-
-2. **Input Second Number**
-   - User enters the second number.
-
-3. **Input Operator**
-   - User enters an operator (`+`, `-`, `*`, `/`).
-
-4. **Validation & Conditions**
-   - Program checks the operator and applies conditions:
-     - `+` → Adds the two numbers.  
-     - `-` → Subtracts the second number from the first.  
-     - `*` → Multiplies the two numbers.  
-     - `/` → Divides the first number by the second, with error handling for division by zero.  
-     - Invalid operator → Displays an error message.  
-
-5. **Result Display**
-   - Shows the arithmetic output or an error message.
-
----
-
-# Smart_Card_Fare_System.cpp
-
-## Purpose
-
-Calculates the fare for a metro journey based on departure and destination points, ensuring valid input and sufficient card balance.
-
----
-
-## Process
-1. **Initialization**
-   - Program starts with a default card balance = 200.
-
-2. **Departure Point Selection**
-   - Displays a menu of departure points (Sector‑1 to Sector‑5).
-   - User enters a departure point number.
-   - If invalid (not between 1–5), program shows error and stops.
-
-3. **Destination Point Selection**
-   - Displays a menu of destination points (Sector‑1 to Sector‑5).
-   - User enters a destination point number.
-   - If invalid (not between 1–5), program shows error and stops.
-   - If departure and destination are the same, program shows error and stops.
-
-4. **Fare Calculation**
-   - Fare = |departure – destination| × 10.
-
-5. **Result Display**
-   - Displays the total fare.
-
-6. **Balance Check**
-   - If card balance < fare → Displays error message.  
-   - Else → Deducts fare and displays closing balance.
-
-7. **Termination**
-   - Program ends with `return 0;`.
-
----
-
-
-# Table_Maker.cpp
-
-
-## Purpose
-
-Generates the multiplication table of a given number up to a specified limit.
-
----
-
-## Process
-1. **Input Number**
-   - User enters the number for which the table should be generated.
-   - If the number ≤ 0 → Displays error message and stops execution.
-
-2. **Input Limit**
-   - User enters the limit (up to which the table should be printed).
-   - If the limit is valid (greater than 0 and ≤ 10,000), it proceeds.
-   - If invalid, it would normally display an error (though in this version, the error checks are commented out).
-
-3. **Table Generation**
-   - Uses a `for` loop to print the multiplication table.
-   - Iterates from 1 to the entered limit.
-   - Prints each line in the format:  
-     ```
-     number x i = result
-     ```
-
-4. **Result Display**
-   - Displays the complete multiplication table.
-
----
-
-# Temperature_Converter.cpp
-
-## Purpose
-
-Converts temperatures between Celsius and Fahrenheit with input validation and repeat calculation option.
-
----
-
-## Process
-1. **Menu Display**
-   - Program shows two options:
-     - 1 → Celsius to Fahrenheit  
-     - 2 → Fahrenheit to Celsius  
-
-2. **User Choice**
-   - User enters the option number.  
-   - If invalid (not 1 or 2), program displays an error and stops.
-
-3. **Conversion**
-   - **Case 1 (Celsius → Fahrenheit):**  
-     - User enters temperature in Celsius.  
-     - Program converts using formula: `(temperature * 1.8) + 32`.  
-     - Displays result.  
-   - **Case 2 (Fahrenheit → Celsius):**  
-     - User enters temperature in Fahrenheit.  
-     - Program converts using formula: `(temperature - 32) * 5 / 9`.  
-     - Displays result.  
-
-4. **Repeat Option**
-   - After each calculation, program asks:  
-     - "Do You Want To Calculate Again? (y/n)"  
-   - If `y` → repeats.  
-   - If `n` → displays "Thank You For Using" and exits.  
-   - If invalid input (not `y` or `n`) → displays error message.
-
-5. **Termination**
-   - Program ends with `return 0;`.
-
----
-
-# Voting_Eligibility.cpp
-
-
-## Purpose
-Determines whether a person is eligible to vote based on their age.
-
----
-
-## Process
-1. **Input Age**
-   - User enters their age.
-
-2. **Validation & Conditions**
-   - Program checks the input value.
-   - Applies conditions:
-     - Age ≥ 18 → Eligible to vote.  
-     - Age < 18 → Not eligible to vote.  
-
-3. **Result Display**
-   - Shows either:
-     - "You Are Eligible To Vote"  
-     - "You Are Not Eligible To Vote"
-
----
-
-# Water_State_Checker.cpp
-
-
-## Purpose
-Determines the physical state of water (solid, liquid, or gaseous) based on its temperature in Celsius.
-
----
-
-## Process
-1. **Input Temperature**
-   - User enters the temperature of water in Celsius.
-
-2. **Validation & Conditions**
-   - Program checks the input value.
-   - Applies conditions:
-     - Temperature < 0°C → Water is in **solid state** (ice).  
-     - Temperature ≥ 100°C → Water is in **gaseous state** (steam).  
-     - Temperature between 0°C and 100°C → Water is in **liquid state**.  
-
-3. **Result Display**
-   - Shows one of the following messages:
-     - "Your Water Is In Solid State"  
-     - "Your Water Is In Liquid State"  
-     - "Your Water Is In Gaseous State"
-
----
+## 🎯 Goal
+To build strong C++ basics through small and practical projects.
