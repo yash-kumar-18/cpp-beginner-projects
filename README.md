@@ -345,6 +345,46 @@ Generates the multiplication table of a given number up to a specified limit.
 
 ---
 
+# Temperature_Converter.cpp
+
+## Purpose
+
+Converts temperatures between Celsius and Fahrenheit with input validation and repeat calculation option.
+
+---
+
+## Process
+1. **Menu Display**
+   - Program shows two options:
+     - 1 → Celsius to Fahrenheit  
+     - 2 → Fahrenheit to Celsius  
+
+2. **User Choice**
+   - User enters the option number.  
+   - If invalid (not 1 or 2), program displays an error and stops.
+
+3. **Conversion**
+   - **Case 1 (Celsius → Fahrenheit):**  
+     - User enters temperature in Celsius.  
+     - Program converts using formula: `(temperature * 1.8) + 32`.  
+     - Displays result.  
+   - **Case 2 (Fahrenheit → Celsius):**  
+     - User enters temperature in Fahrenheit.  
+     - Program converts using formula: `(temperature - 32) * 5 / 9`.  
+     - Displays result.  
+
+4. **Repeat Option**
+   - After each calculation, program asks:  
+     - "Do You Want To Calculate Again? (y/n)"  
+   - If `y` → repeats.  
+   - If `n` → displays "Thank You For Using" and exits.  
+   - If invalid input (not `y` or `n`) → displays error message.
+
+5. **Termination**
+   - Program ends with `return 0;`.
+
+---
+
 # Voting_Eligibility.cpp
 
 
