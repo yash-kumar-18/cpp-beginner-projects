@@ -1,9 +1,9 @@
 # cpp-beginner-projects
 
 ## 📖 Overview
-This repository contains beginner-friendly C++ console projects to practice programming fundamentals through small, practical programs.
+This repository contains beginner-friendly C++ console projects for practicing core programming concepts through small and practical exercises.
 
-These projects mainly focus on:
+Focus areas:
 - Input and output
 - Conditional logic (`if/else`, `switch`)
 - Loops
@@ -12,9 +12,9 @@ These projects mainly focus on:
 ---
 
 ## ⚙️ How This Repository Works
-- Each `.cpp` file is an independent project.
-- You can compile and run each project separately.
-- Every project has its own detailed README in [`project-readmes/`](./project-readmes/) with:
+- Each `.cpp` file is an independent mini project.
+- Every project has a matching explanation file in [`project-readmes/`](./project-readmes/).
+- Each project README follows the same format:
   - Overview
   - How It Works
   - Requirements
@@ -40,6 +40,35 @@ These projects mainly focus on:
 
 ---
 
+## 🧱 Consistent Project Structure (Use in Both Repositories)
+Use this same structure for `cpp-beginner-projects` and `c-beginner-programs`:
+
+```text
+repo-root/
+├── README.md
+├── LICENSE
+├── <Program_Name>.cpp or <Program_Name>.c
+└── project-readmes/
+    ├── <Program_Name>.md
+    └── ...
+```
+
+Consistency rules:
+- Keep source file names in `Pascal_Case_With_Underscores`.
+- Keep project README file names matching source names.
+- Add each new project link in the root README project list.
+- Keep the same 4-section template in every project README.
+
+---
+
+## ➕ Adding a New Project (Checklist)
+1. Add a new source file (`.cpp` in this repo).
+2. Add its documentation in `project-readmes/<Program_Name>.md`.
+3. Follow the standard 4-section README format.
+4. Add the project link to the root README list.
+
+---
+
 ## 🛠️ Requirements
 - A C++ compiler (for example, `g++`)
 - Terminal / command prompt
@@ -52,23 +81,21 @@ These projects mainly focus on:
    git clone https://github.com/yash-kumar-18/cpp-beginner-projects.git
    cd cpp-beginner-projects
    ```
-
 2. Compile a project (example: `Simple_Calculator.cpp`):
    ```bash
    g++ Simple_Calculator.cpp -o Simple_Calculator
    ```
-
 3. Run it:
    ```bash
    ./Simple_Calculator
    ```
 
-> Repeat the same compile-and-run process for other `.cpp` files.
+> Repeat the same compile-and-run process for any other `.cpp` file.
 
 ---
 
 ## 📄 License
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License**.  
 See [`LICENSE`](./LICENSE) for full details.
 
 ---
