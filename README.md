@@ -41,8 +41,7 @@ Focus areas:
 
 ---
 
-## 🧱 Consistent Project Structure (Use in Both Repositories)
-Use this same structure for `cpp-beginner-projects` and `c-beginner-programs`:
+## 🧱 Consistent Project Structure
 
 ```text
 repo-root/
