@@ -47,7 +47,7 @@ Focus areas:
 repo-root/
 ├── README.md
 ├── LICENSE
-├── <Program_Name>.cpp or <Program_Name>.c
+├── <Program_Name>.cpp
 └── project-readmes/
     ├── <Program_Name>.md
     └── ...
