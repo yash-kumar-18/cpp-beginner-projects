@@ -31,13 +31,14 @@ Focus areas:
 6. [Mini ATM](./project-readmes/Mini_ATM.md)
 7. [Movie Ticket Counter](./project-readmes/Movie_Ticket_Counter.md)
 8. [Petrol Pump Dispensor](./project-readmes/Petrol_Pump_Dispensor.md)
-9. [Ride Fare Program](./project-readmes/Ride_Fare_Program.md)
-10. [Simple Calculator](./project-readmes/Simple_Calculator.md)
-11. [Smart Card Fare System](./project-readmes/Smart_Card_Fare_System.md)
-12. [Table Maker](./project-readmes/Table_Maker.md)
-13. [Temperature Converter](./project-readmes/Temperature_Converter.md)
-14. [Voting Eligibility Checker](./project-readmes/Voting_Eligibility_Checker.md)
-15. [Water State Checker](./project-readmes/Water_State_Checker.md)
+9. [Pin Validator](./project-readmes/Pin_Validator.md)
+10. [Ride Fare Program](./project-readmes/Ride_Fare_Program.md)
+11. [Simple Calculator](./project-readmes/Simple_Calculator.md)
+12. [Smart Card Fare System](./project-readmes/Smart_Card_Fare_System.md)
+13. [Table Maker](./project-readmes/Table_Maker.md)
+14. [Temperature Converter](./project-readmes/Temperature_Converter.md)
+15. [Voting Eligibility Checker](./project-readmes/Voting_Eligibility_Checker.md)
+16. [Water State Checker](./project-readmes/Water_State_Checker.md)
 
 ---
 
