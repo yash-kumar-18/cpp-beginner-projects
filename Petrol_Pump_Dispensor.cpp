@@ -7,7 +7,7 @@ double amount;
 cout <<"Choose Your Fuel Type" << endl;
 cout << "1. Petrol (90Rs/L)" << endl;
 cout << "2. Diesel (85Rs/L)" << endl;
-cout << "3. CNG (65Rs/L)" << endl;
+cout << "3. CNG (65Rs/Kg)" << endl;
 cout << "Enter Your Fuel Type Option No. :" ;
 cin >> fueltype;
 if (!(fueltype==1||fueltype==2||fueltype==3))
@@ -43,7 +43,7 @@ else if (dispensingchoice==2)
 {cout << "Your Total Fuel Bill: " <<amount*85<< endl;}
     break;
     case 3: if (dispensingchoice==1)
-{cout << "Your Total Fuel Bill: " <<amount << "& You Will Get " << amount/65 << "L CNG"<<endl;}
+{cout << "Your Total Fuel Bill: " <<amount << "& You Will Get " << amount/65 << "Kg CNG"<<endl;}
 else if (dispensingchoice==2)
 {cout << "Your Total Fuel Bill: " <<amount*65<< endl;}
     break;
