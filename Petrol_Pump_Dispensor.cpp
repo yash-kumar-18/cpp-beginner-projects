@@ -15,7 +15,7 @@ if (!(fueltype==1||fueltype==2||fueltype==3))
 return 0;}   
 cout << "Choose A Dispensing Mode" << endl;
 cout << "1. By Amount (in Rs)" << endl;
-cout << "2. By Volume (in L)"<< endl;
+cout << "2. By Volume (in L/Kg)"<< endl;
 cout << "Choose A Dispensing Option No. :" ;
 cin >> dispensingchoice;
 if (!(dispensingchoice==1||dispensingchoice==2))
@@ -25,7 +25,7 @@ if (dispensingchoice==1)
 {cout << "Enter Amount (in Rs): " ;
     cin >> amount;}
 else if (dispensingchoice==2)
-{ cout << "Enter Volume (in L): " ;
+{ cout << "Enter Volume (in L/Kg): " ;
  cin>> amount;}
  if (amount<=0)
  {cout << "Error: Enter Amount/Volume Must Be Greater Than Zero" << endl;
