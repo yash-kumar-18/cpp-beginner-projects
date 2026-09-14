@@ -32,15 +32,15 @@ int main(){
     cin >> amount;
     if (amount>0)
     {if (balance>amount)
-    {cout << "Withdrawl Successful! Closing Balance : Rs " << balance - amount << endl;
+    {cout << "Withdrawal Successful! Closing Balance : Rs " << balance - amount << endl;
      cout << "Thank You For Banking With Us. Please Visit Again!"<< endl;
     }
     else {
-        cout << "Error: Withdrawl Amount Must Be Less Than or Equal To Available Balance."<< endl;
+        cout << "Error: Withdrawal Amount Must Be Less Than or Equal To Available Balance."<< endl;
     }}
 
     else {
-        cout << "Error: Withdrawl Amount Must Be Greater Than 0."<< endl;
+        cout << "Error: Withdrawal Amount Must Be Greater Than 0."<< endl;
     }
     break;
     case 4:
