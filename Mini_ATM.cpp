@@ -33,7 +33,7 @@ int main(){
     {cout << "Withdrawl Successful! Closing Balance : Rs " << balance - amount << endl;
     }
     else {
-        cout << "Error: Withdrawl Amount Must Be Greater Than Available Balance"<< endl;
+        cout << "Error: Withdrawl Amount Must Be Lesser Than Available Balance"<< endl;
     }}
 
     else {
