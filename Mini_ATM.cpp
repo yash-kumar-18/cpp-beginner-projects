@@ -10,7 +10,7 @@ int main(){
     cout << "2. Deposit Money"<< endl;
     cout << "3. Withdraw Money"<< endl;
     cout << "4. Exit"<< endl;
-    cout << "Enter An Option No.: "
+    cout << "Enter An Option No.: ";
     cin >> choice ;
     switch (choice)
     {
