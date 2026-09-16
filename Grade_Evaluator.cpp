@@ -13,23 +13,18 @@ int main () {
   // condition
     if (marks>=90)
     { cout << "Grade A" << endl ;
-        /* code */
     }
     else if (marks>=75)
     {cout << "Grade B" << endl ;
-        /* code */
     }
     else if (marks>=50)
     {cout << "Grade C" << endl ;
-        /* code */
     }
     else if (marks>=33)
     {cout << "Grade D (Pass)" << endl ;
-        /* code */
     }
     else 
     {cout << "Grade F (Fail)" << endl ;
-        /* code */
     }
     return 0;
 }
