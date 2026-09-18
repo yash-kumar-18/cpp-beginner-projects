@@ -1,30 +1,31 @@
 #include <iostream>
 using namespace std;
+
 int main () {
 
-double temperature;
+    // Variable to store temperature input
+    double temperature;
 
-cout << "Enter Temperature Of Water In Celcius";
+    // Prompt user to enter temperature in Celsius
+    cout << "Enter Temperature Of Water In Celcius";
+    cin >> temperature ;
 
-cin >> temperature ;
-
-if (temperature<0)
-{ cout << "Your Water Is In Solid State " << endl; }
-
-else if (temperature >=100)
-{ cout << "Your Water Is In Gaseous State "<< endl;}
-
-else{cout << "Your Water Is In Liquid State "<< endl; }
-
-
-
-
-
-
-
-
-
-
+    // Check conditions for physical state of water
+    if (temperature < 0)
+    { 
+        // Below 0°C → Solid (ice)
+        cout << "Your Water Is In Solid State " << endl; 
+    }
+    else if (temperature >= 100)
+    { 
+        // At or above 100°C → Gaseous (steam)
+        cout << "Your Water Is In Gaseous State "<< endl;
+    }
+    else
+    { 
+        // Between 0°C and 100°C → Liquid
+        cout << "Your Water Is In Liquid State "<< endl; 
+    }
 
     return 0;
 }
