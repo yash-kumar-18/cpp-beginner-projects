@@ -6,7 +6,7 @@ int main () {
     double fare;
     double distance;
     int choice;
-    bool rushhour;
+    int rushhour;
 
     // Display vehicle options
     cout << "Select A Vechile Type" << endl;
